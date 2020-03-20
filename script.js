@@ -14,4 +14,15 @@ function  init() {
     console.log(searchHistory);
 
     
+    const APIKey = "3200eb2b31ff53d986df9b8f2855f74d";
+    
+    function getWeather(cityName) {
+        
+        let queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + APIKey;
+        axios.get(queryURL)
+        .then(function(response){
+            console.log(response);
+       
+       
+        });
          init();
