@@ -155,6 +155,7 @@ function initPage() {
       historyItem.addEventListener("click", function() {
         getWeather(historyItem.value);
       });
+      historyEl.append(historyItem);
     }
   }
 
